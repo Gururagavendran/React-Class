@@ -1,8 +1,7 @@
 import watch from "../assets/watch.png"
 import phone from "../assets/phone.png"
-import Props from "./ReactProps"
 
-const prodList = [
+const prodList1 = [
   {
     name: "Watch",
     price: 1500,
@@ -17,17 +16,20 @@ const prodList = [
   },
 ]
 
-function DynamicList() {
-  const list = prodList.map((product) => (
-    <Props
-      key={product.name}
-      name={product.name}
-      image={product.image}
-      price={product.price}
-    />
-  ))
+const list = prodList1.map((product) => (
+  <div className="container" key={product.name}>
+    <div className="card1">
+      <img src={product.image} />
+      <div className="externalCard">Product</div>
+      <div>{product.name}</div>
+      <div>{product.price}</div>
+      <button>Buy now</button>
+    </div>
+  </div>
+))
 
-  return <div className="products">{list}</div>
-}
-
-export default DynamicList
+function DynamicListAlt() {
+    return <div className="products">{list}</div>
+  }
+  
+  export default DynamicListAlt
