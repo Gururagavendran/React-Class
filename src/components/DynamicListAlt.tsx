@@ -7,14 +7,14 @@ const prodList2 = [
     name: "Watch",
     price: 1500,
     image: watch,
-    show: true,
+    show: true
   },
   {
     name: "Phone",
     price: 20000,
     image: phone,
-    show: true,
-  },
+    show: true
+  }
 ]
 
 const list = prodList2.map((product) => (
@@ -23,6 +23,7 @@ const list = prodList2.map((product) => (
     name={product.name}
     image={product.image}
     price={product.price}
+    show={product.show}
   />
 ))
 

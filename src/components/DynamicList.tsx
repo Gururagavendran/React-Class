@@ -6,8 +6,9 @@ const prodList1 = [
     name: "Watch",
     price: 1500,
     image: watch,
-    show: true,
+    "show": true,
   },
+
   {
     name: "Phone",
     price: 20000,
@@ -20,10 +21,10 @@ const list = prodList1.map((product) => (
   <div className="container" key={product.name}>
     <div className="card1">
       <img src={product.image} />
-      <div className="externalCard">Product</div>
+      <div className="ProductCard">Product</div>
       <div>{product.name}</div>
       <div>{product.price}</div>
-      <button>Buy now</button>
+      <button className="btn">Buy now</button>
     </div>
   </div>
 ))

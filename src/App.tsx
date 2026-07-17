@@ -6,6 +6,7 @@ import DynamicList from "./components/DynamicList"
 import DynamicListAlt from "./components/DynamicListAlt"
 import ConditionalRender from './components/Conditional'
 import Static from './components/Static'
+import InternalStyle from './components/InternaStyle'
 
 function App() {
   return (
@@ -16,10 +17,16 @@ function App() {
         <Static/>
       </div>
 
+       <h2>Internal Style</h2>
+      <div className="products">
+        <InternalStyle/>
+      </div>
+
+
       <h2>Props</h2>
       <div className="products">
-        <Props name="Watch" image={watch} price={1500} />
-        <Props name="Phone" image={phone} price={20000} />
+        <Props name="Watch" image={watch} price={1500}  />
+        <Props name="Phone" image={phone} price={20000}  />
       </div>
 
        <h2>Conditional Rendering</h2>

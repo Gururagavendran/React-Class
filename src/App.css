@@ -11,6 +11,15 @@
   max-width: 280px;
 }
 
+.btn {
+  background-color: #008a09;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
 .card1 {
   display: flex;
   flex-direction: column;
@@ -28,7 +37,7 @@
   background: #1a1b22;
 }
 
-.externalCard {
+.ProductCard {
   width: 100%;
   padding: 8px 0;
   text-align: center;
