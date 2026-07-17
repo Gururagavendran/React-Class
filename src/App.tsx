@@ -4,10 +4,17 @@ import phone from "./assets/phone.png"
 import Props from "./components/ReactProps"
 import DynamicList from "./components/DynamicList"
 import ConditionalRender from './components/Conditional'
+import Static from './components/Static'
 
 function App() {
   return (
     <>
+    
+    <h2>Regular</h2>
+      <div className="products">
+        <Static/>
+      </div>
+
       <h2>Props</h2>
       <div className="products">
         <Props name="Watch" image={watch} price={1500} />
@@ -22,6 +29,7 @@ function App() {
 
 
       <h2>Dynamic Content Loading</h2>
+      <div className="products" />
       <DynamicList />
     </>
   )
