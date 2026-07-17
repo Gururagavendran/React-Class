@@ -17,16 +17,16 @@ const prodList2 = [
   },
 ]
 
-function DynamicList() {
-  const list = prodList2.map((product) => (
-    <Props
-      key={product.name}
-      name={product.name}
-      image={product.image}
-      price={product.price}
-    />
-  ))
+const list = prodList2.map((product) => (
+  <Props
+    key={product.name}
+    name={product.name}
+    image={product.image}
+    price={product.price}
+  />
+))
 
+function DynamicList() {
   return <div className="products">{list}</div>
 }
 
