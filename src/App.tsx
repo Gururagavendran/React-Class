@@ -2,7 +2,7 @@ import './App.css'
 import watch from "./assets/watch.png"
 import phone from "./assets/phone.png"
 import Props from "./components/props"
-import ProductList from "./components/ProductList"
+import DynamicList from "./components/DynamicList"
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       </div>
 
       <h2>Dynamic Content Loading</h2>
-      <ProductList />
+      <DynamicList />
     </>
   )
 }
