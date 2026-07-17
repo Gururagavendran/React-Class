@@ -9,6 +9,12 @@ const internalStyle = {
     borderRadius: '5px',
 };
 
+const InternalStyle2 = {
+    color: 'yellow',
+    padding: '10px',
+    borderRadius: '5px',
+};
+
 function InternalStyle() {
   return (
     <>
@@ -16,8 +22,8 @@ function InternalStyle() {
         <div className="card1">
           <img src={watch} />
           <div className="ProductCard" style={internalStyle}>Product</div>
-          <div>Watch</div>
-          <div>1500</div>
+          <div style={InternalStyle2}>Watch</div>
+          <div style={InternalStyle2}>1500</div>
           <button className="btn">Buy now</button>
         </div>
       </div>
@@ -26,8 +32,8 @@ function InternalStyle() {
         <div className="card1">
           <img src={phone} />
           <div className="ProductCard" style={internalStyle}>Product</div>
-          <div>Phone</div>
-          <div>20000</div>
+          <div style={InternalStyle2}>Phone</div>
+          <div style={InternalStyle2}>20000</div>
           <button className="btn">Buy now</button>
         </div>
       </div>

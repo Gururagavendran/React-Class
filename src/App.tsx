@@ -6,7 +6,7 @@ import DynamicList from "./components/DynamicList"
 import DynamicListAlt from "./components/DynamicListAlt"
 import ConditionalRender from './components/Conditional'
 import Static from './components/Static'
-import InternalStyle from './components/InternaStyle'
+import InternalStyle from './components/InternalStyle'
 
 function App() {
   return (
