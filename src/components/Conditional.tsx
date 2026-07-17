@@ -1,8 +1,7 @@
-function Props(props:any) {
+function ConditionalRender(props:any) {
     if (!props.show) {
         return null
     }
-    
     
     return (
           <>
@@ -21,5 +20,4 @@ function Props(props:any) {
     )
 
 }
-
-export default Props
+export default ConditionalRender

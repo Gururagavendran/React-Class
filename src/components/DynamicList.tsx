@@ -1,6 +1,6 @@
 import watch from "../assets/watch.png"
 import phone from "../assets/phone.png"
-import Props from "./props"
+import Props from "./ReactProps"
 
 const prodList = [
   {
@@ -24,7 +24,6 @@ function DynamicList() {
       name={product.name}
       image={product.image}
       price={product.price}
-      show={product.show}
     />
   ))
 
