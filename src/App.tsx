@@ -40,7 +40,7 @@ function App() {
       <div className="products" />
       <DynamicList />
 
-       <h2>Dynamic Content Loading Alternative</h2>
+      <h2>Dynamic Content Loading Alternative</h2>
       <div className="products" />
       <DynamicListAlt />
     </>
@@ -48,3 +48,12 @@ function App() {
 }
 
 export default App
+
+
+/*
+key={index} - key value error in console
+add every component as seperate navigation tabs in navbar/sidebar
+sort function - ascending & descending
+hook State in react
+button functions - onclick, onhover
+*/
