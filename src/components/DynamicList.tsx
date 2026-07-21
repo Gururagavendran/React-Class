@@ -6,18 +6,21 @@ const prodList1 = [
     name: "Watch",
     price: 1500,
     image: watch,
-    "show": true,
+    show: true
   },
 
   {
     name: "Phone",
     price: 20000,
     image: phone,
-    show: true,
+    show: true
   },
 ]
 
-const list = prodList1.map((product) => (
+/* Filter Method*/
+const list = prodList1
+.filter(product => product.show)
+.map((product) => (
   <div className="container" key={product.name}>
     <div className="card1">
       <img src={product.image} />
@@ -25,12 +28,34 @@ const list = prodList1.map((product) => (
       <div>{product.name}</div>
       <div>{product.price}</div>
       <button className="btn">Buy now</button>
+      <div>{product.show}</div>
+
     </div>
   </div>
 ))
 
-function DynamicListAlt() {
+/*If Condition
+const list = prodList1.map((product) => {
+  if (product.show) {
+    return (
+      <div className="container" key={product.name}>
+        <div className="card1">
+          <img src={product.image} />
+          <div className="ProductCard">Product</div>
+          <div>{product.name}</div>
+          <div>{product.price}</div>
+          <button className="btn">Buy now</button>
+          <div>{product.show}</div>
+
+        </div>
+      </div>
+    )}
+  return null;
+})*/
+
+function DynamicList() {
+
     return <div className="products">{list}</div>
   }
   
-  export default DynamicListAlt
+  export default DynamicList

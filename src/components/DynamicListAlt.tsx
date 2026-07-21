@@ -17,18 +17,41 @@ const prodList2 = [
   }
 ]
 
-const list = prodList2.map((product) => (
-  <Props
-    key={product.name}
-    name={product.name}
-    image={product.image}
-    price={product.price}
-    show={product.show}
-  />
-))
 
-function DynamicList() {
+/* If condition */
+const list = prodList2.map((product) => {
+  if (product.show) {
+    return (
+      <Props
+        key={product.name}
+        name={product.name}
+        image={product.image}
+        price={product.price}
+        show={product.show}
+      />
+    );
+  }
+
+  return null;
+});
+
+/* Filter method
+const list = prodList2
+.filter(product => product.show)
+.map((product) => (
+      <Props
+        key={product.name}
+        name={product.name}
+        image={product.image}
+        price={product.price}
+        show={product.show}
+      />
+));
+*/
+
+function DynamicListAlt() {
+    
   return <div className="products">{list}</div>
 }
 
-export default DynamicList
+export default DynamicListAlt

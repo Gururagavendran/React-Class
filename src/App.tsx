@@ -31,8 +31,8 @@ function App() {
 
        <h2>Conditional Rendering</h2>
       <div className="products">
-        <ConditionalRender name="Watch" image={watch} price={1500} show={true}/>
-        <ConditionalRender name="Phone" image={phone} price={20000} />
+        <ConditionalRender name="Watch" image={watch} price={1500} />
+        <ConditionalRender name="Phone" image={phone} price={20000} show={true}/>
       </div>
 
 
