@@ -16,7 +16,6 @@ const links = [
   { to: '/filter', label: 'Filter' },
   { to: '/sort', label: 'Sort' },
   { to: '/hooks', label: 'Hooks' },
-  { to: '/purchase', label: 'Purchase' },
 ]
 
 function Sidebar({ open, onClose }: SidebarProps) {
