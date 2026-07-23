@@ -1,6 +1,8 @@
+import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
+import Sidebar from './components/Sidebar'
 import Home from './components/Home'
 import StaticPage from './pages/StaticPage'
 import InternalStylePage from './pages/InternalStylePage'
@@ -14,9 +16,12 @@ import HooksPage from './pages/HooksPage'
 import PurchasePage from './pages/PurchasePage'
 
 function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(false)
+
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar onMenuClick={() => setSidebarOpen(true)} />
+      <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
       <main className="page">
         <Routes>
           <Route path="/" element={<Home />} />

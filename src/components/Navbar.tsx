@@ -1,22 +1,20 @@
 import { NavLink } from 'react-router-dom'
 
+type NavbarProps = {
+  onMenuClick: () => void
+}
+
 const links = [
   { to: '/', label: 'Home', end: true },
-  { to: '/static', label: 'Regular' },
-  { to: '/internal-style', label: 'Internal Style' },
-  { to: '/props', label: 'Props' },
-  { to: '/conditional', label: 'Conditional' },
-  { to: '/dynamic', label: 'Dynamic List' },
-  { to: '/dynamic-alt', label: 'Dynamic Alt' },
-  { to: '/filter', label: 'Filter' },
-  { to: '/sort', label: 'Sort' },
-  { to: '/hooks', label: 'Hooks' },
 ]
 
-function Navbar() {
+function Navbar({ onMenuClick }: NavbarProps) {
   return (
     <nav className="navbar">
-      <div className="navbar-brand">React Class</div>
+      <button className="sidebar-toggle" onClick={onMenuClick} type="button">
+        ☰
+      </button>
+      <div className="navbar-brand">Sample App</div>
       <ul className="navbar-links">
         {links.map((link) => (
           <li key={link.to}>
