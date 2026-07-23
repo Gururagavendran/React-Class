@@ -9,6 +9,7 @@ const links = [
   { to: '/dynamic', label: 'Dynamic List' },
   { to: '/dynamic-alt', label: 'Dynamic Alt' },
   { to: '/filter', label: 'Filter' },
+  { to: '/sort', label: 'Sort' },
 ]
 
 function Navbar() {

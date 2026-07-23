@@ -9,6 +9,7 @@ import ConditionalPage from './pages/ConditionalPage'
 import DynamicPage from './pages/DynamicPage'
 import DynamicAltPage from './pages/DynamicAltPage'
 import FilterPage from './pages/FilterPage'
+import SortPage from './pages/SortPage'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/dynamic" element={<DynamicPage />} />
           <Route path="/dynamic-alt" element={<DynamicAltPage />} />
           <Route path="/filter" element={<FilterPage />} />
+          <Route path="/sort" element={<SortPage />} />
         </Routes>
       </main>
     </BrowserRouter>
@@ -34,7 +36,6 @@ export default App
 
 /*
 key={index} - key value error in console
-sort function - ascending & descending
 hook State in react
 button functions - onclick, onhover
 */
