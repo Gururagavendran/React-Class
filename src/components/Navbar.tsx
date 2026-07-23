@@ -8,6 +8,7 @@ const links = [
   { to: '/conditional', label: 'Conditional' },
   { to: '/dynamic', label: 'Dynamic List' },
   { to: '/dynamic-alt', label: 'Dynamic Alt' },
+  { to: '/filter', label: 'Filter' },
 ]
 
 function Navbar() {

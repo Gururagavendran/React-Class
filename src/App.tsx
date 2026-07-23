@@ -8,6 +8,7 @@ import PropsPage from './pages/PropsPage'
 import ConditionalPage from './pages/ConditionalPage'
 import DynamicPage from './pages/DynamicPage'
 import DynamicAltPage from './pages/DynamicAltPage'
+import FilterPage from './pages/FilterPage'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/conditional" element={<ConditionalPage />} />
           <Route path="/dynamic" element={<DynamicPage />} />
           <Route path="/dynamic-alt" element={<DynamicAltPage />} />
+          <Route path="/filter" element={<FilterPage />} />
         </Routes>
       </main>
     </BrowserRouter>

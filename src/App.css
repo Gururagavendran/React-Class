@@ -132,3 +132,26 @@
   background-color: red;
   box-sizing: border-box;
 }
+
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-group .btn {
+  margin-top: 0;
+}
+
+.filter-active {
+  outline: 2px solid #fff;
+}

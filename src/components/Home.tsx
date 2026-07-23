@@ -7,6 +7,7 @@ const pages = [
   { to: '/conditional', title: 'Conditional Rendering', desc: 'Show or hide based on a flag' },
   { to: '/dynamic', title: 'Dynamic List', desc: 'Load cards from a list with map' },
   { to: '/dynamic-alt', title: 'Dynamic Alt', desc: 'Alternative dynamic list approach' },
+  { to: '/filter', title: 'Filter', desc: 'Filter products by price and category' },
 ]
 
 function Home() {
