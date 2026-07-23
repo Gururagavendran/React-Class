@@ -1,58 +1,37 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import watch from "./assets/watch.png"
-import phone from "./assets/phone.png"
-import Props from "./components/ReactProps"
-import DynamicList from "./components/DynamicList"
-import DynamicListAlt from "./components/DynamicListAlt"
-import ConditionalRender from './components/Conditional'
-import Static from './components/Static'
-import InternalStyle from './components/InternalStyle'
+import Navbar from './components/Navbar'
+import Home from './components/Home'
+import StaticPage from './pages/StaticPage'
+import InternalStylePage from './pages/InternalStylePage'
+import PropsPage from './pages/PropsPage'
+import ConditionalPage from './pages/ConditionalPage'
+import DynamicPage from './pages/DynamicPage'
+import DynamicAltPage from './pages/DynamicAltPage'
 
 function App() {
   return (
-    <>
-    
-    <h2>Regular</h2>
-      <div className="products">
-        <Static/>
-      </div>
-
-       <h2>Internal Style</h2>
-      <div className="products">
-        <InternalStyle/>
-      </div>
-
-
-      <h2>Props</h2>
-      <div className="products">
-        <Props name="Watch" image={watch} price={1500}  />
-        <Props name="Phone" image={phone} price={20000}  />
-      </div>
-
-       <h2>Conditional Rendering</h2>
-      <div className="products">
-        <ConditionalRender name="Watch" image={watch} price={1500} />
-        <ConditionalRender name="Phone" image={phone} price={20000} show={true}/>
-      </div>
-
-
-      <h2>Dynamic Content Loading</h2>
-      <div className="products" />
-      <DynamicList />
-
-      <h2>Dynamic Content Loading Alternative</h2>
-      <div className="products" />
-      <DynamicListAlt />
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <main className="page">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/static" element={<StaticPage />} />
+          <Route path="/internal-style" element={<InternalStylePage />} />
+          <Route path="/props" element={<PropsPage />} />
+          <Route path="/conditional" element={<ConditionalPage />} />
+          <Route path="/dynamic" element={<DynamicPage />} />
+          <Route path="/dynamic-alt" element={<DynamicAltPage />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   )
 }
 
 export default App
 
-
 /*
 key={index} - key value error in console
-add every component as seperate navigation tabs in navbar/sidebar
 sort function - ascending & descending
 hook State in react
 button functions - onclick, onhover
