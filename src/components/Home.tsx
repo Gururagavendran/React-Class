@@ -9,6 +9,7 @@ const pages = [
   { to: '/dynamic-alt', title: 'Dynamic Alt', desc: 'Alternative dynamic list approach' },
   { to: '/filter', title: 'Filter', desc: 'Filter products by price and category' },
   { to: '/sort', title: 'Sort', desc: 'Sort products by price ascending or descending' },
+  { to: '/hooks', title: 'Hooks', desc: 'useState, click events, cart and purchase' },
 ]
 
 function Home() {

@@ -10,6 +10,8 @@ import DynamicPage from './pages/DynamicPage'
 import DynamicAltPage from './pages/DynamicAltPage'
 import FilterPage from './pages/FilterPage'
 import SortPage from './pages/SortPage'
+import HooksPage from './pages/HooksPage'
+import PurchasePage from './pages/PurchasePage'
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="/dynamic-alt" element={<DynamicAltPage />} />
           <Route path="/filter" element={<FilterPage />} />
           <Route path="/sort" element={<SortPage />} />
+          <Route path="/hooks" element={<HooksPage />} />
+          <Route path="/purchase" element={<PurchasePage />} />
         </Routes>
       </main>
     </BrowserRouter>
@@ -36,6 +40,5 @@ export default App
 
 /*
 key={index} - key value error in console
-hook State in react
-button functions - onclick, onhover
+button functions - onhover
 */
